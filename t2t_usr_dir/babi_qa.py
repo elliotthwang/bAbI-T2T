@@ -387,7 +387,7 @@ class BabiQaSentence(problem.Problem):
     p.modality = {babi_qa.FeatureNames.STORY: modalities.ModalityType.SYMBOL,
                   babi_qa.FeatureNames.QUESTION: modalities.ModalityType.SYMBOL,
 
-                  "targets": modalities.ClassLabelModality}
+                  "targets": modalities.class_label}
 
     p.vocab_size = {babi_qa.FeatureNames.STORY: story_vocab_size,
                     babi_qa.FeatureNames.QUESTION: question_vocab_size,

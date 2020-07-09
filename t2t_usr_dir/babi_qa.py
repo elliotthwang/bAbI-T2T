@@ -383,8 +383,7 @@ class BabiQaSentence(problem.Problem):
     question_vocab_size = self._encoders[babi_qa.FeatureNames.QUESTION].vocab_size
     num_classes = self._encoders['targets'].vocab_size
 
-   # p.modality = {babi_qa.FeatureNames.STORY: modalities.SymbolModality,
-    #              babi_qa.FeatureNames.QUESTION: modalities.SymbolModality,
+  
     p.modality = {babi_qa.FeatureNames.STORY: ModalityType.SYMBOL,
                   babi_qa.FeatureNames.QUESTION: ModalityType.SYMBOL,
 
